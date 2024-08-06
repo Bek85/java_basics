@@ -10,6 +10,11 @@ public class Rectangle {
         setWidth(0);
     }
 
+    public Rectangle(double length, double width) {
+        setLength(length);
+        setWidth(width);
+    }
+
     public double calculatePerimeter() {
         return (2 * length) + (2 * width);
     }
