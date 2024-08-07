@@ -1,7 +1,5 @@
 package objects;
 
-import methods.GreetUser;
-
 public class HomeAreaCalculator {
 
     public static void main(String[] args) {
