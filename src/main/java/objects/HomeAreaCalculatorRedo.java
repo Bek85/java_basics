@@ -8,7 +8,7 @@ public class HomeAreaCalculatorRedo {
 
     public static void main(String[] args) {
 
-        HomeAreaCalculatorRedo calculator = new HomeAreaCalculatorRedo();
+        var calculator = new HomeAreaCalculatorRedo();
         Rectangle room1 = calculator.getRoom();
         Rectangle room2 = calculator.getRoom();
         double totalArea = calculator.calculateAreaOfRoom(room1, room2);
