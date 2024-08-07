@@ -15,9 +15,16 @@ public class LotteryTicket {
 
     private static void printTicket(int[] array) {
         Arrays.sort(array);
+
+        // Using enhanced for loop
         for (int number : array) {
             System.out.print(number + " | ");
         }
+
+        // Using for loop
+//        for (int i = 0; i < array.length; i++) {
+//            System.out.print(array[i] + " | ");
+//        }
 
     }
 
@@ -29,7 +36,7 @@ public class LotteryTicket {
             int randomNumber;
 
             do {
-               randomNumber = random.nextInt(1, MAX_TICKET_NUMBER);
+               randomNumber = random.nextInt(1, MAX_TICKET_NUMBER) + 1;
             } while(search(ticket, randomNumber ));
             ticket[i] = randomNumber;
 
